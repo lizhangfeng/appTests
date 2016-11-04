@@ -98,7 +98,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     @OnClick({R.id.btn_move_view, R.id.btn_move_view2, R.id.btn_qq_conversation, R.id.btn_datepicker, R.id.btn_round_progressbar,
             R.id.btn_clipe, R.id.btn_title_fade, R.id.btn_wx_shake, R.id.btn_expandablelistview, R.id.btn_take_photo, R.id.btn_parabola
             , R.id.btn_percent_layout, R.id.btn_eventBus, R.id.btn_jazzyViewpager, R.id.btn_3d_roate, R.id.btn_rxjava_and_retrofit, R.id.img_user
-            , R.id.btn_retrofit, R.id.btn_rxjava, R.id.btn_scale_view})
+            , R.id.btn_retrofit, R.id.btn_rxjava, R.id.btn_achartengine})
     public void onClick(View view) {
         switch (view.getId()) {
             case img_user://左侧栏
@@ -158,7 +158,8 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
             case R.id.btn_rxjava_and_retrofit://RxJava+Retrofit的使用
                 startActivity(new Intent(this, RxJavaAndRetrofitActivity.class));
                 break;
-            case R.id.btn_scale_view://刻度尺效果
+            case R.id.btn_achartengine://统计图的绘制
+
                 break;
 
         }

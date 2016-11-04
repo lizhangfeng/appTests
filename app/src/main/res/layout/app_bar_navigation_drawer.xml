@@ -129,9 +129,9 @@
                 android:text="@string/rxjava_and_retrofit" />
 
             <Button
-                android:id="@+id/btn_scale_view"
+                android:id="@+id/btn_achartengine"
                 style="@style/button_main"
-                android:text="@string/scale_view" />
+                android:text="@string/achartengine" />
 
         </LinearLayout>
 

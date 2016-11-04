@@ -56,7 +56,7 @@ public class WelcomeFragment extends BaseFragment  {
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
-                videoView.start();   /* 循环播放 */
+                //videoView.start();   /* 循环播放 */
                 startActivity(new Intent(getContext(), MainActivity.class));
                 getActivity().finish();
             }

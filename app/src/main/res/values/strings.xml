@@ -19,7 +19,7 @@
     <string name="function_14">EventBus的使用</string>
     <string name="function_15">View的3D旋转动画</string>
     <string name="function_16">RxJava的使用</string>
-    <string name="scale_view">刻度尺效果</string>
+    <string name="achartengine">Google的画折线图、曲线图、统计图AchartEngine</string>
 
     <string name="shake_shake">摇一摇</string>
     <string name="select_date">选择日期</string>
