@@ -1,9 +1,7 @@
 # AndroidDemos
     集成了各种样式的效果的Demo集合
     
-   <div align="center">
    <img src="http://ww4.sinaimg.cn/mw690/e75a115bgw1f3rrbzv1m8g209v0diqv7.gif" />
-   </div>
 
 ##版本声明如下
 ###------------------------------版本v1.0.0------------------------------
