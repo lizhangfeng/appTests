@@ -15,18 +15,6 @@
  */
 package org.achartengine;
 
-import org.achartengine.chart.AbstractChart;
-import org.achartengine.chart.RoundChart;
-import org.achartengine.chart.XYChart;
-import org.achartengine.model.Point;
-import org.achartengine.model.SeriesSelection;
-import org.achartengine.renderer.DefaultRenderer;
-import org.achartengine.renderer.XYMultipleSeriesRenderer;
-import org.achartengine.tools.FitZoom;
-import org.achartengine.tools.PanListener;
-import org.achartengine.tools.Zoom;
-import org.achartengine.tools.ZoomListener;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -39,6 +27,18 @@ import android.os.Build;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+
+import org.achartengine.chart.AbstractChart;
+import org.achartengine.chart.RoundChart;
+import org.achartengine.chart.XYChart;
+import org.achartengine.model.Point;
+import org.achartengine.model.SeriesSelection;
+import org.achartengine.renderer.DefaultRenderer;
+import org.achartengine.renderer.XYMultipleSeriesRenderer;
+import org.achartengine.tools.FitZoom;
+import org.achartengine.tools.PanListener;
+import org.achartengine.tools.Zoom;
+import org.achartengine.tools.ZoomListener;
 
 /**
  * The view that encapsulates the graphical chart.
@@ -97,12 +97,15 @@ public class GraphicalView extends View {
       mRenderer = ((RoundChart) mChart).getRenderer();
     }
     if (mRenderer.isZoomButtonsVisible()) {
-      zoomInImage = BitmapFactory.decodeStream(GraphicalView.class
-          .getResourceAsStream("image/zoom_in.png"));
-      zoomOutImage = BitmapFactory.decodeStream(GraphicalView.class
-          .getResourceAsStream("image/zoom_out.png"));
-      fitZoomImage = BitmapFactory.decodeStream(GraphicalView.class
-          .getResourceAsStream("image/zoom-1.png"));
+//      zoomInImage = BitmapFactory.decodeStream(GraphicalView.class
+//          .getResourceAsStream("image/zoom_in.png"));
+//      zoomOutImage = BitmapFactory.decodeStream(GraphicalView.class
+//          .getResourceAsStream("image/zoom_out.png"));
+//      fitZoomImage = BitmapFactory.decodeStream(GraphicalView.class
+//          .getResourceAsStream("image/zoom-1.png"));
+      zoomInImage = BitmapFactory.decodeResource(context.getResources(),R.drawable.zoom_in);
+      zoomOutImage = BitmapFactory.decodeResource(context.getResources(),R.drawable.zoom_out);
+      fitZoomImage = BitmapFactory.decodeResource(context.getResources(),R.drawable.zoom);
     }
 
     if (mRenderer instanceof XYMultipleSeriesRenderer

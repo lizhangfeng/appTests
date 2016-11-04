@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto"
     package="bwf.androiddemos">
+    <!--
+    android:installLocation可以设置为"auto"、"internalOnly"、"preferExternal"三个值中的任何一个.
+　　auto:程序可能被安装在外部存储介质上(例如:SD Card),但是默认会被安装到手机内存中.当手机内存为空时,程序将被安装到外部存储介质上.当程序安装到手机上后,用户　　　　　　可以决定把程序放在外部储介质还是内存中.
+　　internalOnly:默认值.当设置为该值时,程序只能被安装在内存中,如果内存为空,则程序将不能成功安装.
+　　preferExternal:将程序安装在外部存储介质上,但是系统不保证程序一定会被安装到外部存储介质上.当外部存储介质不可以或空时,程序将被安装到内存中.程序使用了for　　　　　　ward-locking机制时也将被安装到内存中,因为外部存储不支持此机制.程序安装后,用户可以自由切换程序应该在外部还是内部存储介质上.
+注意:当程序使用了Google Play的Copy Protection特性时,只能安装到内存中.
+    -->
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -9,6 +17,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
     <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
@@ -101,6 +110,13 @@
         <activity
             android:name=".AchartEngineDemoActivity"
             android:screenOrientation="portrait" />
+
+        <activity android:name=".ChartDemo"/>
+        <activity android:name=".achart.PieChartBuilder"/>
+        <activity android:name=".achart.XYChartBuilder"/>
+        <activity android:name=".achart.XYChartBuilderBackup"/>
+
+        <activity android:name="org.achartengine.GraphicalActivity" />
     </application>
 
 </manifest>

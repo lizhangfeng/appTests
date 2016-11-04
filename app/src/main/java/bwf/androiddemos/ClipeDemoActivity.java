@@ -10,6 +10,9 @@ import bwf.androiddemos.base.BaseActivity;
 import bwf.androiddemos.utils.ToastUtil;
 import bwf.androiddemos.widget.MyListView;
 
+/**
+ * clipToPadding的使用
+ */
 public class ClipeDemoActivity extends BaseActivity {
 
     @Bind(R.id.list)

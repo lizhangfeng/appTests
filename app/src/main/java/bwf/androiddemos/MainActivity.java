@@ -110,7 +110,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
             case R.id.btn_move_view2://view跟随手势移动并且靠边悬浮
                 startActivity(new Intent(this, MoveView2Activity.class));
                 break;
-            case R.id.btn_clipe://view穿透效果
+            case R.id.btn_clipe://clipToPadding的使用
                 startActivity(new Intent(this, ClipeDemoActivity.class));
                 break;
             case R.id.btn_title_fade://滑动标题淡入淡出效果
@@ -159,7 +159,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
                 startActivity(new Intent(this, RxJavaAndRetrofitActivity.class));
                 break;
             case R.id.btn_achartengine://统计图的绘制
-
+                startActivity(new Intent(this, ChartDemo.class));
                 break;
 
         }
