@@ -1,9 +1,9 @@
 # AndroidDemos
     集成了各种样式的效果的Demo集合
-    <iframe height=500 width=500 src="http://ww4.sinaimg.cn/mw690/e75a115bgw1f3rrbzv1m8g209v0diqv7.gif">
+    
     <div align="center">
-<img src="http://ww4.sinaimg.cn/mw690/e75a115bgw1f3rrbzv1m8g209v0diqv7.gif" />
- </div>
+    <img src="http://ww4.sinaimg.cn/mw690/e75a115bgw1f3rrbzv1m8g209v0diqv7.gif" />
+    </div>
 
 ##版本声明如下
 ###------------------------------版本v1.0.0------------------------------
