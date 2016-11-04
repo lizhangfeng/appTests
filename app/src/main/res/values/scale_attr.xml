@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="scale_view_max" format="integer" />
+    <attr name="scale_view_min" format="integer" />
+    <attr name="scale_view_height" format="dimension" />
+    <attr name="scale_view_margin" format="dimension" />
+</resources>

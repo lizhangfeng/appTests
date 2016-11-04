@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/bg_main"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    tools:context="bwf.androiddemos.MainActivity">
+
+    <ImageView
+        android:id="@+id/img_main_bg"
+        android:layout_width="@dimen/bg_main"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@mipmap/bg_main" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="50dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_move_view"
+                style="@style/button_main"
+                android:text="@string/function_01" />
+
+            <Button
+                android:id="@+id/btn_move_view2"
+                style="@style/button_marquee"
+                android:text="@string/function_02" />
+
+
+            <!--
+            android:ellipsize="marquee" //跑马灯效果
+            android:marqueeRepeatLimit="marquee_forever"//跑马灯重复次数
+            android:focusable="true" //由于Activity中没有写任何方法，故此处让其获得焦点
+            android:focusableInTouchMode="true"
+            android:singleLine="true"     //只有单行才可能有跑马灯效果
+            -->
+
+            <Button
+                android:id="@+id/btn_parabola"
+                style="@style/button_main"
+                android:text="@string/function_03" />
+
+            <Button
+                android:id="@+id/btn_3d_roate"
+                style="@style/button_main"
+                android:text="@string/function_15" />
+
+            <Button
+                android:id="@+id/btn_percent_layout"
+                style="@style/button_main"
+                android:text="@string/function_04" />
+
+            <Button
+                android:id="@+id/btn_clipe"
+                style="@style/button_main"
+                android:text="@string/function_05" />
+
+            <Button
+                android:id="@+id/btn_title_fade"
+                style="@style/button_main"
+                android:text="@string/function_06" />
+
+
+            <Button
+                android:id="@+id/btn_wx_shake"
+                style="@style/button_main"
+                android:text="@string/function_07" />
+
+            <Button
+                android:id="@+id/btn_datepicker"
+                style="@style/button_main"
+                android:text="@string/function_08" />
+
+            <Button
+                android:id="@+id/btn_round_progressbar"
+                style="@style/button_main"
+                android:text="@string/function_09" />
+
+            <Button
+                android:id="@+id/btn_qq_conversation"
+                style="@style/button_main"
+                android:text="@string/function_10" />
+
+            <Button
+                android:id="@+id/btn_expandablelistview"
+                style="@style/button_main"
+                android:text="@string/function_11" />
+
+            <Button
+                android:id="@+id/btn_jazzyViewpager"
+                style="@style/button_main"
+                android:text="@string/function_12" />
+
+            <Button
+                android:id="@+id/btn_take_photo"
+                style="@style/button_main"
+                android:text="@string/function_13" />
+
+            <Button
+                android:id="@+id/btn_eventBus"
+                style="@style/button_main"
+                android:text="@string/function_14" />
+
+            <Button
+                android:id="@+id/btn_rxjava"
+                style="@style/button_main"
+                android:text="@string/function_16" />
+
+            <Button
+                android:id="@+id/btn_retrofit"
+                style="@style/button_main"
+                android:text="@string/rx_retrofit" />
+
+            <Button
+                android:id="@+id/btn_rxjava_and_retrofit"
+                style="@style/button_main"
+                android:text="@string/rxjava_and_retrofit" />
+
+            <Button
+                android:id="@+id/btn_scale_view"
+                style="@style/button_main"
+                android:text="@string/scale_view" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/title_main" />
+
+</RelativeLayout>

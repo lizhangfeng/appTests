@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rx_java_demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:padding="20dp"
+    tools:context="bwf.androiddemos.RxJavaDemoActivity">
+
+    <Button
+        android:id="@+id/btn_rxjava"
+        style="@style/button_main"
+        android:text="@string/rx_test" />
+
+    <Button
+        android:id="@+id/btn_rxjava_schedule"
+        style="@style/button_main"
+        android:layout_below="@id/btn_rxjava"
+        android:text="@string/rx_schedule" />
+
+    <Button
+        android:id="@+id/btn_rxjava_map"
+        style="@style/button_main"
+        android:layout_below="@id/btn_rxjava_schedule"
+        android:text="@string/rx_map" />
+
+    <Button
+        android:id="@+id/btn_rxjava_flatmap"
+        style="@style/button_main"
+        android:layout_below="@id/btn_rxjava_map"
+        android:text="@string/rx_map" />
+
+    <ImageView
+        android:id="@+id/img_rx_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

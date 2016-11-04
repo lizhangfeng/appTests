@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    defaultConfig {
+        applicationId "bwf.androiddemos"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 2
+        versionName "1.0.1"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'junit:junit:4.12'
+
+    compile project(':achartengine')
+    //注解
+    compile 'com.jakewharton:butterknife:7.0.0'
+    //Facebook的加载网络图片fresco
+    compile 'com.facebook.fresco:fresco:0.8.1'
+    //百分比布局
+    compile 'com.android.support:percent:23.4.0'
+    //EventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //RJava+Retrofit
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+
+}

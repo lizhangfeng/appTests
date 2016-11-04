@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="1dp"
+    android:orientation="vertical"
+    android:layout_below="@id/btn_city_picker">
+
+    <!-- 兑换数量 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/exchange_num"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_remove_num"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/rb_exchange_left_grey"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tv_exchange_num"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/rb_exchange_middle_grey"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="@dimen/text_14" />
+
+            <TextView
+                android:id="@+id/tv_add_num"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/rb_exchange_right_grey"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">AndroidDemos</string>
+
+    <string name="exchange_num">兑换数量</string>
+
+    <string name="function_01">View跟随手势移动</string>
+    <string name="function_02">View跟随手势移动并且靠边悬浮,View跟随手势移动并且靠边悬浮</string>
+    <string name="function_03">抛物线动画</string>
+    <string name="function_04">百分比布局</string>
+    <string name="function_05">View穿透效果</string>
+    <string name="function_06">滑动标题淡入淡出效果</string>
+    <string name="function_07">微信摇一摇</string>
+    <string name="function_08">选择日期和城市滚轮效果</string>
+    <string name="function_09">圆形进度条</string>
+    <string name="function_10">指定QQ临时会话</string>
+    <string name="function_11">可扩展ListView（带展开动画）</string>
+    <string name="function_12">JazzyViewPager</string>
+    <string name="function_13">跳转照相机拍照</string>
+    <string name="function_14">EventBus的使用</string>
+    <string name="function_15">View的3D旋转动画</string>
+    <string name="function_16">RxJava的使用</string>
+    <string name="scale_view">刻度尺效果</string>
+
+    <string name="shake_shake">摇一摇</string>
+    <string name="select_date">选择日期</string>
+    <string name="select_city">选择城市</string>
+    <string name="eventbus_test">点击发送事件</string>
+    <string name="move_globe">移动球</string>
+    <string name="default_expand">默认expand</string>
+    <string name="anim_expand">带动画的expand</string>
+    <string name="start_anim">动画起点</string>
+    <string name="end_anim">动画终点</string>
+    <string name="click_start_anim">点击开始动画</string>
+    <string name="select_photo_from_galley">从相册选择照片</string>
+    <string name="select_photo_from_take">拍照获取照片</string>
+    <string name="rx_test">RxJava的普通使用</string>
+    <string name="rx_schedule">RxJava异步线程的使用</string>
+    <string name="rx_map">RxJava一对一变换的使用</string>
+    <string name="rx_flatmap">RxJava一对多变换的使用</string>
+    <string name="rxjava_and_retrofit">RxJava+Retrofit的使用</string>
+    <string name="retrofit_test01">Retrofit官网的使用方式</string>
+    <string name="retrofit_upload">Retrofit 上传文件</string>
+    <string name="retrofit_download">Retrofit 下载文件</string>
+    <string name="rx_retrofit">Retrofit的使用</string>s
+    <string name="test">测试</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

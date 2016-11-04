@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#80000000"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/ll_pop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dip">
+
+        <RelativeLayout
+            android:id="@+id/datepicker_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/datepicker_btcancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="取消"
+                android:textColor="#6CA5FF"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/datepicker_btsure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:text="确定"
+                android:textColor="#6CA5FF"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <bwf.androiddemos.widget.wheel.DateWheelPicker
+            android:id="@+id/datepicker_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+</LinearLayout>  

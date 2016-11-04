@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <bwf.androiddemos.widget.MyListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:clipToPadding="false"
+        android:paddingTop="50dip" />
+
+    <TextView
+        android:id="@+id/tv_clip"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#7C000000"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/test"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

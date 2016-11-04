@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_retrofit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="bwf.androiddemos.RetrofitActivity">
+
+    <Button
+        android:id="@+id/btn_retrofit_test"
+        style="@style/button_main"
+        android:text="@string/retrofit_test01" />
+
+    <Button
+        android:id="@+id/btn_retrofit_upload"
+        style="@style/button_main"
+        android:text="@string/retrofit_upload" />
+
+    <Button
+        android:id="@+id/btn_retrofit_download"
+        style="@style/button_main"
+        android:text="@string/retrofit_download" />
+
+</LinearLayout>
