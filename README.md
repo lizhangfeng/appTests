@@ -1,7 +1,9 @@
 # AndroidDemos
     集成了各种样式的效果的Demo集合
+
+##效果图如下
     
-   <img src="http://ww4.sinaimg.cn/mw690/e75a115bgw1f3rrbzv1m8g209v0diqv7.gif" />
+   <img src="http://thumbnail0.baidupcs.com/thumbnail/21e02ef646f554208687371f8d3a3573?fid=4081898284-250528-417600601280532&time=1478826000&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-Tp1DRLFNgp46cOCS%2BMQT%2FYYjP2k%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=7314825562895193236&dp-callid=0&size=c710_u400&quality=100" />
 
 ##版本声明如下
 ###------------------------------版本v1.0.0------------------------------
