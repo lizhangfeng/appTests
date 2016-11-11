@@ -12,8 +12,10 @@ public class MoveView2Activity extends BaseActivity implements View.OnTouchListe
 
     @Bind(R.id.move_view)
     Button moveView;
-    private float lastX, lastY;
-    private int screen_width;
+
+    private float lastX, lastY;//按下时记录的x，y坐标
+
+    private int screen_width;//屏幕宽度
 
     @Override
     public int getContentViewId() {
@@ -39,23 +41,25 @@ public class MoveView2Activity extends BaseActivity implements View.OnTouchListe
     public boolean onTouch(View view, MotionEvent e) {
 
         switch (e.getAction()) {
-            case MotionEvent.ACTION_DOWN:
+            case MotionEvent.ACTION_DOWN://手指按下
                 lastY = e.getY();
                 lastX = e.getX();
 
                 break;
 
-            case MotionEvent.ACTION_MOVE:
+            case MotionEvent.ACTION_MOVE://手指移动
                 float tempX = e.getX();
                 float tempY = e.getY();
 
+                //手指滑动记录和按下时候x，y的偏移量
                 float tempOffSetX = tempX - lastX;
                 float tempOffSetY = tempY - lastY;
 
+                //重新布局view
                 view.layout((int) (view.getLeft() + tempOffSetX), (int) (view.getTop() + tempOffSetY), (int) (view.getRight() + tempOffSetX), (int) (view.getBottom() + tempOffSetY));
 
                 break;
-            case MotionEvent.ACTION_UP:
+            case MotionEvent.ACTION_UP://手指抬起
                 float curX = e.getRawX();
                 float curY = e.getY();
                 float moveY = curY - lastY;

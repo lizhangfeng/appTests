@@ -1,6 +1,7 @@
 package bwf.androiddemos;
 
 import android.view.View;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import butterknife.Bind;
@@ -8,7 +9,6 @@ import butterknife.OnClick;
 import bwf.androiddemos.adapter.ClipeAdapter;
 import bwf.androiddemos.base.BaseActivity;
 import bwf.androiddemos.utils.ToastUtil;
-import bwf.androiddemos.widget.MyListView;
 
 /**
  * clipToPadding的使用
@@ -16,7 +16,7 @@ import bwf.androiddemos.widget.MyListView;
 public class ClipeDemoActivity extends BaseActivity {
 
     @Bind(R.id.list)
-    MyListView list;
+    ListView list;
     @Bind(R.id.tv_clip)
     TextView tvClip;
     private ClipeAdapter adapter;
@@ -28,7 +28,7 @@ public class ClipeDemoActivity extends BaseActivity {
 
     @Override
     public void beforeInitView() {
-        useDefaultTitleBarColor = false;
+
     }
 
     @Override

@@ -15,11 +15,11 @@
         <item name="android:textColor">@android:color/black</item>
     </style>
 
-    <style name="AppTheme.NoActionBar" parent="@android:style/Theme.Translucent">
+    <style name="AppTheme.NoActionBar" parent="AppTheme"><!-- 此处设置主题透明为了防止因主题切换导致的空白页面原因-->
         <item name="android:windowIsTranslucent">true</item>
-        <!--<item name="windowActionBar">false</item>-->
+        <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-        <!--<item name="android:screenOrientation">portrait</item>-->
+        <item name="android:screenOrientation">portrait</item>
     </style>
 
     <!--  TextView样式-->

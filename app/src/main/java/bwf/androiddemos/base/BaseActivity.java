@@ -50,7 +50,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
      * 通用的一些基本设置
      */
     private void initBase() {
-        //注解bind当前activity
+        //注解实现view的绑定
         ButterKnife.bind(this);
 
         //如果存在actionBar，就隐藏(也可以通过主题AppTheme.NoActionBar隐藏)
@@ -71,6 +71,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
      * 设置rootView据顶部为通知栏的高度
      */
     public void setRootPadding(View view){
+//        getWindow().getDecorView().setPadding(0, MyApplication.statusHeight,0,0);
         if (view != null){
             view.setPadding(0, MyApplication.statusHeight,0,0);
         }
@@ -129,7 +130,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     }
 
     /**
-     * 不用强制转换的findviewbyid
+     * 不用强制转换的findviewbyid（本案例使用了注解此处可以忽略）
      *
      * @param id
      * @param <T>

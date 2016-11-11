@@ -42,6 +42,9 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     @Bind(R.id.drawer_layout)
     DrawerLayout drawer;
 
+    //背景动画
+    private ObjectAnimator animator;
+
     @Override
     public int getContentViewId() {
         return R.layout.activity_main;
@@ -142,8 +145,6 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         }
     }
 
-    private ObjectAnimator animator;
-
     /**
      * 背景图动画
      */
@@ -178,6 +179,11 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
             animator.resume();
     }
 
+    /**
+     * 左侧栏功能
+     * @param item
+     * @return
+     */
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
