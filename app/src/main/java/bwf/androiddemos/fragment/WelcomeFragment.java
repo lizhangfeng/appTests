@@ -42,9 +42,6 @@ public class WelcomeFragment extends BaseFragment  {
     @Override
     protected void initData() {
 
-//        startActivity(new Intent(getContext(), MainActivity.class));
-//        getActivity().finish();
-
         videoView.setVideoURI(Uri.parse("android.resource://" + getActivity().getPackageName() + "/" + R.raw.intro));
 
         videoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {

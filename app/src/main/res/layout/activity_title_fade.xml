@@ -3,17 +3,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
+    android:fitsSystemWindows="false"
     tools:context="bwf.androiddemos.TitleFadeActivity">
 
-    <bwf.androiddemos.widget.MyListView
-        android:id="@+id/list_fade"
+    <bwf.androiddemos.widget.CustomScollView
+        android:id="@+id/scrollview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:clipToPadding="false" />
+        android:layout_height="match_parent">
 
-    <include
-        layout="@layout/title_home"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <bwf.androiddemos.widget.MyListView
+                android:id="@+id/list_fade"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:clipToPadding="false" />
+        </LinearLayout>
+
+    </bwf.androiddemos.widget.CustomScollView>
+
+    <TextView
+        android:id="@+id/tv_fade_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="我是标题"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
 
 </RelativeLayout>

@@ -1,32 +1,43 @@
 package bwf.androiddemos;
 
-import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
+import butterknife.Bind;
+import bwf.androiddemos.base.BaseActivity;
 import bwf.androiddemos.widget.RoundProgressBar;
 
-public class RoungProgressActivity extends AppCompatActivity implements Handler.Callback{
+public class RoungProgressActivity extends BaseActivity implements Handler.Callback {
 
     //进度条
-    private RoundProgressBar roundProgressBar;
-    private TextView tv_progress;
+    @Bind(R.id.roundProgressBar)
+    RoundProgressBar roundProgressBar;
+    @Bind(R.id.tv_progress)
+    TextView tv_progress;
 
     private int progress = 0;//进度条进度
 
     private Handler handler;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_roung_progress);
+    public int getContentViewId() {
+        return R.layout.activity_roung_progress;
+    }
 
+    @Override
+    public void beforeInitView() {
         handler = new Handler(this);
+    }
 
-        roundProgressBar = (RoundProgressBar) findViewById(R.id.roundProgressBar);
-        tv_progress = (TextView) findViewById(R.id.tv_progress);
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void initData() {
         setProgressAnim(80);
     }
 
@@ -64,5 +75,10 @@ public class RoungProgressActivity extends AppCompatActivity implements Handler.
                 break;
         }
         return false;
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

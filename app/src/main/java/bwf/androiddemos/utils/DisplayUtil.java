@@ -1,10 +1,8 @@
 package bwf.androiddemos.utils;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Point;
-import android.graphics.Rect;
 import android.util.DisplayMetrics;
 
 /**
@@ -71,10 +69,13 @@ public class DisplayUtil {
      * @param context
      * @return
      */
-    public static int getStatusBarHeight(Activity context) {
-        Rect frame = new Rect();
-        context.getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
-        return frame.top;
+    public static int getStatusBarHeight(Context context) {
+        int result = 0;
+        int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
+        if (resourceId > 0) {
+            result = context.getResources().getDimensionPixelSize(resourceId);
+        }
+        return result;
     }
 
     /**

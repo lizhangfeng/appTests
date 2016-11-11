@@ -13,6 +13,7 @@ import android.view.inputmethod.InputMethodManager;
 import org.greenrobot.eventbus.EventBus;
 
 import butterknife.ButterKnife;
+import bwf.androiddemos.MyApplication;
 import bwf.androiddemos.R;
 import bwf.androiddemos.tools.AppManager;
 import bwf.androiddemos.tools.SystemStatusManager;
@@ -34,9 +35,21 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
             //被杀死之后重新创建
             getSaveData(savedInstanceState);
         }
-
         setContentView(getContentViewId());
+        initBase();
+        beforeInitView();
+        if (useDefaultTitleBarColor) {
+            //改变状态栏颜色;注意：此处一旦设置 android:fitsSystemWindows="false"将无效
+            setTitleBarColor(R.color.light_black);
+        }
+        initView();
+        initData();
+    }
 
+    /**
+     * 通用的一些基本设置
+     */
+    private void initBase() {
         //注解bind当前activity
         ButterKnife.bind(this);
 
@@ -52,16 +65,15 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 
         useDefaultTitleBarColor = true;
 
-        beforeInitView();
+    }
 
-        if (useDefaultTitleBarColor) {
-            //改变状态栏颜色;注意：此处一旦设置 android:fitsSystemWindows="false"将无效
-            setTitleBarColor(R.color.colorPrimary);
+    /**
+     * 设置rootView据顶部为通知栏的高度
+     */
+    public void setRootPadding(View view){
+        if (view != null){
+            view.setPadding(0, MyApplication.statusHeight,0,0);
         }
-
-        initView();
-        initData();
-
     }
 
     @Override

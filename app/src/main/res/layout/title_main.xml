@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/ll_title"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
     android:layout_width="fill_parent"
-    android:layout_height="45.0dip"
-    android:background="@color/transparent"
+    android:layout_height="wrap_content"
     android:layout_alignParentTop="true"
+    android:background="@color/transparent"
     android:gravity="center_vertical"
     android:orientation="horizontal"
     android:paddingLeft="10dp">
@@ -13,18 +13,19 @@
         android:id="@+id/img_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_margin="10dp"
         android:src="@mipmap/user" />
 
 
     <TextView
         android:id="@+id/tv_home_search"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_centerInParent="true"
         android:gravity="center"
         android:text="@string/app_name"
         android:textColor="@color/actionbar_color"
         android:textSize="@dimen/text_20" />
 
-</LinearLayout>
+</RelativeLayout>

@@ -6,7 +6,7 @@ import android.widget.ListView;
 
 /**
  * Created by Lizhangfeng on 2016/9/18 0018.
- * Description:
+ * Description:可以测量高度的ListView
  */
 public class MyListView extends ListView {
 
@@ -30,13 +30,19 @@ public class MyListView extends ListView {
 
     @Override
     protected void onScrollChanged(int l, int t, int oldl, int oldt) {
+        super.onScrollChanged(l, t, oldl, oldt);
         if (onScrollChangedListener != null)
             onScrollChangedListener.onScrollChanged(l, t, oldl, oldt);
-        super.onScrollChanged(l, t, oldl, oldt);
     }
 
     public interface OnScrollChangedListener {
         void onScrollChanged(int x, int y, int oldx, int oldy);
     }
 
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        int expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2,
+                MeasureSpec.AT_MOST);
+        super.onMeasure(widthMeasureSpec, expandSpec);
+    }
 }

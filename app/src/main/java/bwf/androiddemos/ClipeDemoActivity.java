@@ -28,7 +28,7 @@ public class ClipeDemoActivity extends BaseActivity {
 
     @Override
     public void beforeInitView() {
-
+        useDefaultTitleBarColor = false;
     }
 
     @Override

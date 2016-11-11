@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    android:installLocation="auto"
-    package="bwf.androiddemos">
+    package="bwf.androiddemos"
+    android:installLocation="auto">
     <!--
     android:installLocation可以设置为"auto"、"internalOnly"、"preferExternal"三个值中的任何一个.
 　　auto:程序可能被安装在外部存储介质上(例如:SD Card),但是默认会被安装到手机内存中.当手机内存为空时,程序将被安装到外部存储介质上.当程序安装到手机上后,用户　　　　　　可以决定把程序放在外部储介质还是内存中.
@@ -27,9 +27,10 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:supportsRtl="true"
         android:largeHeap="true"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        
         <activity
             android:name=".WelcomeActivity"
             android:screenOrientation="portrait">
@@ -111,12 +112,23 @@
             android:name=".AchartEngineDemoActivity"
             android:screenOrientation="portrait" />
 
-        <activity android:name=".ChartDemo"/>
-        <activity android:name=".achart.PieChartBuilder"/>
-        <activity android:name=".achart.XYChartBuilder"/>
-        <activity android:name=".achart.XYChartBuilderBackup"/>
+        <!-- AchartEngine相关-->
+        <activity
+            android:name=".ChartDemo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".achart.PieChartBuilder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".achart.XYChartBuilder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".achart.XYChartBuilderBackup"
+            android:screenOrientation="portrait" />
 
-        <activity android:name="org.achartengine.GraphicalActivity" />
+        <activity
+            android:name="org.achartengine.GraphicalActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

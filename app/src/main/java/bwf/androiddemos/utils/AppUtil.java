@@ -9,6 +9,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.os.Build;
 import android.provider.Settings.Secure;
 import android.telephony.TelephonyManager;
 import android.view.WindowManager;
@@ -32,10 +33,11 @@ public class AppUtil {
     // 手机品牌
     public static String MOBIL_BRAND = android.os.Build.BRAND;
 
+    //cpu的abi版本
+    public static String CPU_ABI = Build.CPU_ABI;
+
     /**
      * 获取屏幕分辨率
-     * isZh
-     *
      * @param context
      * @return
      */

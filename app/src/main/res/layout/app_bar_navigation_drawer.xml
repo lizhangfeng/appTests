@@ -1,8 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_main"
     android:layout_width="@dimen/bg_main"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="false"
+    android:fitsSystemWindows="true"
     tools:context="bwf.androiddemos.MainActivity">
 
     <ImageView
@@ -17,7 +18,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/transparent"
-        android:paddingBottom="20dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:paddingTop="50dp"
