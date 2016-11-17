@@ -25,6 +25,7 @@ import bwf.androiddemos.bean.City;
 import bwf.androiddemos.event.MessageEvent;
 import bwf.androiddemos.utils.DisplayUtil;
 import bwf.androiddemos.utils.IntentAndroidUtils;
+import bwf.androiddemos.utils.LogUtils;
 import bwf.androiddemos.utils.QQUtils;
 import bwf.androiddemos.utils.ToastUtil;
 
@@ -56,6 +57,7 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
     public void beforeInitView() {
         //注册EventBus
         EventBus.getDefault().register(this);
+        LogUtils.e("123");
     }
 
     @Override
