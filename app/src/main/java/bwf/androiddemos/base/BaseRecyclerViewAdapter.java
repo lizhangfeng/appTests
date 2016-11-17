@@ -158,5 +158,4 @@ public abstract class BaseRecyclerViewAdapter<T, VH extends BaseRecyclerViewAdap
     public interface OnItemClickListener<T> {
         void onItemClick(int position, T data);
     }
-
 }

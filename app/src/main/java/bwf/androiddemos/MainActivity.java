@@ -20,6 +20,8 @@ import org.greenrobot.eventbus.ThreadMode;
 import butterknife.Bind;
 import butterknife.OnClick;
 import bwf.androiddemos.base.BaseActivity;
+import bwf.androiddemos.base.BaseRecyclerViewAdapter;
+import bwf.androiddemos.bean.City;
 import bwf.androiddemos.event.MessageEvent;
 import bwf.androiddemos.utils.DisplayUtil;
 import bwf.androiddemos.utils.IntentAndroidUtils;

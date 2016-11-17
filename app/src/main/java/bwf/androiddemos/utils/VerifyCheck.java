@@ -2,6 +2,8 @@ package bwf.androiddemos.utils;
 
 import android.widget.EditText;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -159,7 +161,9 @@ public class VerifyCheck {
 //                return true;
 //            }
 //        }
-        return true;//这里客户端不做手机号判断，防止出现新的号短
+
+
+       return true;//这里客户端不做手机号判断，防止出现新的号短
     }
 
     /**
